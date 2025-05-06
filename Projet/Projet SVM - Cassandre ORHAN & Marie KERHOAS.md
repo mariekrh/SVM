@@ -23,6 +23,8 @@ Mai 2025<br><br><hr>
 
 ![](https://github.com/mariekrh/SVM/blob/8913cb045d7b9301b2b6717a61fe809d0cdef41b/Projet/Images/Logo_IAE.jpg)
 
+<img src="https://github.com/mariekrh/SVM/blob/8913cb045d7b9301b2b6717a61fe809d0cdef41b/Projet/Images/Logo_IAE.jpg"  width="200"/>
+
 ## Modèles
 
 ...
