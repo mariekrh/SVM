@@ -8,7 +8,7 @@ Les haricots secs ...
 
 <h4 align="center"> 
 Cassandre ORHAN & Marie KERHOAS <br> <br>
-Mai 2025<br><br><hr><hr>
+Mai 2025<br><br><hr>
 </h4>
 
 ## Introduction
