@@ -15,21 +15,30 @@ Mai 2025<br><br><hr>
 
 ## Analyse exploratoire
 
-|cellule 1|cellule 2|
-|--------|--------|
-|    A    |    B    |
-|    C    |    D    |
+
+<div align="center">
+
+| Item         | Price | # In stock #|
+|--------------|:-----:|------------:|
+| Juicy Apples |  1.99 |        739  |
+| Bananas      |  1.89 |          6  |
+
+<br>
+<i>Légende </i>
+<br><br>
+</div>
 
 
-
-
-<p align="center">
+<div align="center">
   <img 
   src="https://github.com/mariekrh/SVM/blob/8913cb045d7b9301b2b6717a61fe809d0cdef41b/Projet/Images/Logo_IAE.jpg"
   width="600" />
   <br>
-  <i>Légende </>
-</p>
+  <i>Légende </i>
+  <br><br>
+</div>
+
+`code`
 
 ## Modèles
 
@@ -37,7 +46,7 @@ Mai 2025<br><br><hr>
 
 ## Conclusion
 
-`code`
+
 
 
 
