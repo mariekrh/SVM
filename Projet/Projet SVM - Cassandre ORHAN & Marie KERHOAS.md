@@ -23,7 +23,6 @@ Mai 2025<br><br><hr>
 | Juicy Apples |  1.99 |        739  |
 | Bananas      |  1.89 |          6  |
 
-<br>
 <i>Légende </i>
 <br><br>
 </div>
