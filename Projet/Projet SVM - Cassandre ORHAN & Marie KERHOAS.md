@@ -18,10 +18,10 @@ Mai 2025<br><br><hr>
 
 <div align="center">
 
-| Item         | Price | # In stock #|
-|--------------|:-----:|------------:|
-| Juicy Apples |  1.99 |        739  |
-| Bananas      |  1.89 |          6  |
+| Item         | Price | In stock |
+|--------------|:-----:|:--------:|
+| Juicy Apples |  1.99 |     739  |
+| Bananas      |  1.89 |       6  |
 
 <i>Légende </i>
 <br><br>
