@@ -1,6 +1,5 @@
 <h4 align="center"> 
-M2 ECAP <br> <br>
-Projet SVM 
+M2 ECAP - SVM 
 </h4>
 
 <h3 align="center" style="font-size: 28px;">
