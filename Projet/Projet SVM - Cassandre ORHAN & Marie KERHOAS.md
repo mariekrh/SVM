@@ -402,9 +402,11 @@ Dans les unités d'origine, cela signifie que par exemple un axe majeur supérie
 
 <br>
 
-Maintenant que nous comprenons comment fonctionne notre modèle à l'échelle globale, examinons son comportement au niveau individuel avec l'interprétation locale, qui nous révélera pourquoi un haricot spécifique est classé comme appartenant à une variété et pas à l'autre.
+Maintenant que nous comprenons comment fonctionne notre modèle à l'échelle globale, examinons son comportement au niveau individuel avec l'interprétabilité locale, qui nous révélera pourquoi un haricot spécifique est classé comme appartenant à une variété et pas à l'autre.
 
 ### Interprétatabilité individuelle
+
+
 
 <div align="center">
   <img 
