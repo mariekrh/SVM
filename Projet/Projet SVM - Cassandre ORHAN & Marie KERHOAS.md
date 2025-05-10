@@ -423,12 +423,14 @@ On observe que la majorité des courbes ont une allure proche pour chacune des v
 
 Pour en revenir à l'interprétabilité au niveau local, nous allons choisir un haricot au hasard dans notre jeu test et chercher à comprendre la prédiction qui lui a été attribuée. La première méthode que nous emploirons dans cette optique est l'algorythme Local surogate (Lime).
 
+<br>
+
 <div align="center">
   <img 
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/17.png"
   width="600" />
   <br>
-  <i>Dépendances partielles individuelles et moyennes pour chaque caractéristique </i>
+  <i>LIME pour un individu du jeu de test </i>
   <br><br>
 </div>
 
