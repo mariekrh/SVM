@@ -415,6 +415,30 @@ Maintenant que nous comprenons comment fonctionne notre modèle à l'échelle gl
   <br><br>
 </div>
 
+LIME
+
+Shapley value
+
+div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/15.png"
+  width="600" />
+  <br>
+  <i> Légende </i>
+  <br><br>
+</div>
+
+beeswarm (Contribution des variables)
+
+div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/16.png"
+  width="600" />
+  <br>
+  <i> Légende </i>
+  <br><br>
+</div>
+
 
 ## Conclusion
 
