@@ -77,13 +77,13 @@ Par ailleurs, nous avons également cherché à connaitre la distribution des va
 
 <br>
 
-Notre choix s'est alors porté sur 2 variétés semblant présenter des caractéristiques relativement distinctes : Dermason et Horoz.
+Notre choix s'est alors porté sur 2 variétés semblant présenter des caractéristiques relativement distinctes : Dermason et Horoz. Leur répartition est la suivante :
 
 <br>
 
 <div align="center">
   <img 
-  src="https://github.com/mariekrh/SVM/blob/8913cb045d7b9301b2b6717a61fe809d0cdef41b/Projet/Images/Logo_IAE.jpg"
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/3.png"
   width="600" />
   <br>
   <i>Légende </i>
@@ -92,11 +92,22 @@ Notre choix s'est alors porté sur 2 variétés semblant présenter des caracté
 
 <br>
 
-### Les statistiques descriptives
-
-Afin d'améliorer notre compréhension des données choisies, nous avons calculé leurs principales statistiques descriptives
-
 ### Les distribution des caractéristiques selon les 2 variétes
+
+A présent notre choix de variétés fait, nous avons une nouvelle fois réaliser des graphiques présentant la distribution des caractéristiques mais cette fois, seulement selon les variétés Dermason et Horoz.
+
+<br>
+
+<div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/4.png"
+  width="600" />
+  <br>
+  <i>Légende </i>
+  <br><br>
+</div>
+
+<br>
 
 ### Les corrélations 
 
@@ -106,7 +117,7 @@ L'étape suivante a consisté à étudier les coefficients des corrélations ent
 
 <div align="center">
   <img 
-  src="https://github.com/mariekrh/SVM/blob/8913cb045d7b9301b2b6717a61fe809d0cdef41b/Projet/Images/Logo_IAE.jpg"
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/5.png"
   width="600" />
   <br>
   <i>Légende </i>
@@ -119,14 +130,18 @@ Dans notre cas, nous avons constaté que des coefficients très importants étai
 
 La seconde matrice de corrélation réalisée après la suppression des colonnes était donc la suivante :
 
+<br>
+
 <div align="center">
   <img 
-  src="https://github.com/mariekrh/SVM/blob/8913cb045d7b9301b2b6717a61fe809d0cdef41b/Projet/Images/Logo_IAE.jpg"
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/6.png"
   width="600" />
   <br>
   <i>Légende </i>
   <br><br>
 </div>
+
+<br>
 
 
 
