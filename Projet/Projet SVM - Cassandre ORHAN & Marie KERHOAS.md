@@ -337,6 +337,21 @@ En étudiant l'interprétabilité globale de notre modèle, nous cherchons à co
 
 Via ce graphique, nous comprenons que l'excentricité et la longueur de l'axe majeur, avec des scores d'importance respectifs d'environ 0.08 et 0.07, sont les principaux facteurs influençant notre modèle tandis que les autres variables ont une plus faible importance.
 
+<br>
+
+De plus, ...
+
+Enfin, dans le graphique de distribution de l'importance des variables, la largeur des boites indique la variabilité de l'influence de chaque caractéristique. Ainsi l'excentricité bien que dominante, présente une distribution plus étendue, indiquant que son effet peut fluctuer selon le contexte ou ses interactions avec les autres variables. Au contraire, les distributions plus étroites de l'étendue et de la solidité indiquent des influences plus constante, bien que mineure.
+
+<div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/12.png"
+  width="600" />
+  <br>
+  <i>Distribution de l'importance des variables </i>
+  <br><br>
+</div>
+
 Par ailleurs, nous nous intéressons également aux intéractions potentielles pouvant exister entre les variables explicatives.
 
 <br>
@@ -386,16 +401,7 @@ Si ces graphiques ont été réalisés à partir des valeurs standardisées des 
 
 Dans les unités d'origine, cela signifie que par exemple un axe majeur supérieur à 325 pixels augmente drastiquement la probabilité de classification HOROZ.
 
-Enfin, dans le graphique de distribution de l'importance des variables, la largeur des boites indique la variabilité de l'influence de chaque caractéristique. Ainsi l'excentricité bien que dominante, présente une distribution plus étendue, indiquant que son effet peut fluctuer selon le contexte ou ses interactions avec les autres variables. Au contraire, les distributions plus étroites de l'étendue et de la solidité indiquent des influences plus constante, bien que mineure.
-
-<div align="center">
-  <img 
-  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/12.png"
-  width="600" />
-  <br>
-  <i>Distribution de l'importance des variables </i>
-  <br><br>
-</div>
+<br>
 
 Maintenant que nous comprenons comment fonctionne notre modèle à l'échelle globale, examinons son comportement au niveau individuel avec l'interprétation locale, qui nous révélera pourquoi un haricot spécifique est classé comme appartenant à une variété et pas à l'autre.
 
