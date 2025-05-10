@@ -318,6 +318,8 @@ Au vu des résultats obtenus, si nous ne devons retenir qu'un modèle se sera ce
 
 ## Interprétabilité du meilleur modèle
 
+### Interprétatabilité globale
+
 
 <div align="center">
   <img 
@@ -363,6 +365,8 @@ Au vu des résultats obtenus, si nous ne devons retenir qu'un modèle se sera ce
   <i>Légende </i>
   <br><br>
 </div>
+
+### Interprétatabilité individuelle
 
 <div align="center">
   <img 
