@@ -419,7 +419,9 @@ LIME
 
 Shapley value
 
-div align="center">
+<br>
+
+<div align="center">
   <img 
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/15.png"
   width="600" />
@@ -428,9 +430,13 @@ div align="center">
   <br><br>
 </div>
 
+<br>
+
 beeswarm (Contribution des variables)
 
-div align="center">
+<br>
+
+<div align="center">
   <img 
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/16.png"
   width="600" />
@@ -438,6 +444,8 @@ div align="center">
   <i>Légende </i>
   <br><br>
 </div>
+
+<br>
 
 
 ## Conclusion
