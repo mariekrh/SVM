@@ -424,7 +424,7 @@ div align="center">
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/15.png"
   width="600" />
   <br>
-  <i> Légende </i>
+  <i>Légende </i>
   <br><br>
 </div>
 
@@ -435,7 +435,7 @@ div align="center">
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/16.png"
   width="600" />
   <br>
-  <i> Légende </i>
+  <i>Légende </i>
   <br><br>
 </div>
 
