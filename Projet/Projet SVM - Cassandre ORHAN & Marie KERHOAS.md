@@ -51,7 +51,7 @@ Etant donné notre choix de nous focaliser sur deux des catégories proposées, 
 
 <div align="center">
   <img 
-  src="https://github.com/mariekrh/SVM/blob/8913cb045d7b9301b2b6717a61fe809d0cdef41b/Projet/Images/1.jpg"
+  src="https://github.com/mariekrh/SVM/blob/8913cb045d7b9301b2b6717a61fe809d0cdef41b/Projet/Images/1.png"
   width="600" />
   <br>
   <i>Légende </i>
@@ -68,7 +68,7 @@ Par ailleurs, nous avons également cherché à connaitre la distribution des va
 
 <div align="center">
   <img 
-  src="https://github.com/mariekrh/SVM/blob/8913cb045d7b9301b2b6717a61fe809d0cdef41b/Projet/Images/2.jpg"
+  src="https://github.com/mariekrh/SVM/blob/8913cb045d7b9301b2b6717a61fe809d0cdef41b/Projet/Images/2.png"
   width="600" />
   <br>
   <i>Légende </i>
