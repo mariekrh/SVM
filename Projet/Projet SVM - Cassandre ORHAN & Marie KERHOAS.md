@@ -324,6 +324,7 @@ La dernière phase de cette étude concerne l'interprétabilité du modèle choi
 ### Interprétatabilité globale
 
 En étudiant l'interprétabilité globale de notre modèle, nous cherchons à comprendre l'impact des variables sur les prédictions qu'il fournit. Aussi, nous commencons par nous intéresser à l'importance des différentes variables explicatives.
+
 <br>
 <div align="center">
   <img 
@@ -334,9 +335,11 @@ En étudiant l'interprétabilité globale de notre modèle, nous cherchons à co
   <br><br>
 </div>
 
-Via ce graphique, nous comprenons que l'excentricité et la longueur de l'axe majeur, avec des scores d'importances respectifs d'environ 0.08 et 0.07, sont les principaux facteurs influençant notre modèle tandis que les autres variables ont une plus faible importance.
+Via ce graphique, nous comprenons que l'excentricité et la longueur de l'axe majeur, avec des scores d'importance respectifs d'environ 0.08 et 0.07, sont les principaux facteurs influençant notre modèle tandis que les autres variables ont une plus faible importance.
 
 Par ailleurs, nous nous intéressons également aux intéractions potentielles pouvant exister entre les variables explicatives.
+
+<br>
 
 <div align="center">
   <img 
@@ -349,7 +352,7 @@ Par ailleurs, nous nous intéressons également aux intéractions potentielles p
 
 Nous apprenons grâce à ce graphique qu'il existe des effets joints significatifs entre l'excentricité et la longueur de l'axe majeur. Cela signifie que ces deux caractéristiques fonctionnent ensemble pour distinguer efficacement les variétés Dermason et Horoz.
 
-A présent, nous allons étudier les les graphiques de dépendance partielle de chacune des variables. Ils illustrent les relations fonctionnelles entre chaque caractéristique et la prédiction.
+A présent, nous allons étudier les graphiques de dépendance partielle de chacune des variables. Ils illustrent les relations fonctionnelles entre chaque caractéristique et la prédiction.
 
 <div align="center">
   <img 
