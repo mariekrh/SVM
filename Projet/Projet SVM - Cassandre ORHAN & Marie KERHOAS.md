@@ -182,7 +182,7 @@ Pour cela, nous avons du séparer notre jeu de données : en premier lieu en les
 
 ### Les modèles et les métriques
 
-Résultats pour les test :
+Nous avons choisi d'appliquer 7 modèles en conservant dans un premier temps les paramètres d'origine proposés. Après avoir entrainé nos modèles sur le jeu test, nous l'avons tester avec notre jeu test. Cela nous a donné les résultats suivants :
 
 <div align="center">
 
@@ -200,9 +200,15 @@ Résultats pour les test :
 <br>
 </div>
 
+La matrice de confusion des différents modèles nous permet de nous renre compte des grains correctement associés à leur variété ainsi que des grains dont la prédiction a été d'une variété à laquelle ils n'appartiennent pas. Grâce à ces matrices, nous obtenons 2 métriques permettant d'évaluer la pertinence de nos modèle : l'accuracy et le F1 score.
+
+On constate que l'ensemble des modèles apportent des prédictions proches de la réalité dans la classification des grains de haricots secs avec des accuracy et F1 score de 0,99 pour chacun des modèles testés. En observant plus précisément les matrices de confusion, on se rend compte qu'il y a davantage de grains dont la prédiction est d'appartenir à la variété Dermason alors qu'ils viennet de la variété Horoz que l'inverse. 
+
+Avec uniquement ces informations, il n'est pas facile de choisir un modèle plus pertinent que les autres.
+
 ### La cross validation des modèles d'origine
 
-Afin d'évaluer la qualité des modèles précédemment élaborés, nous avons également eu recours à de la cross validation en choisissant un nombre de K-folds de 5.
+Afin d'évaluer la qualité des modèles précédemment élaborés, nous avons également eu recours à de la cross validation en choisissant un nombre de K-folds de 5 et en nous intéressant aux accuracy moyennes.
 
 <br>
 
@@ -233,7 +239,7 @@ Afin d'évaluer la qualité des modèles précédemment élaborés, nous avons �
 <br>
 </div>
 
-Avec une accuracy de 0.9929, le modèle SVM rbf ...
+Comme nous pouvions nous y attendre, les accuracy moyennes sont proches au sein des différents modèles. Toutefois celui ayant la plus forte est le SVM rbf avec une accuracy moyenne de 0.9929. C'est donc ce modèle qui semble être le plus pertinent.
 
 <br>
 
@@ -288,7 +294,7 @@ Avec une accuracy de 0.9922, le modèle RF ...
 
 <br>
 
-
+### Le meilleur modèle
 
 ## Interprétatbilité du meilleur modèle
 
