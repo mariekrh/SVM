@@ -406,7 +406,7 @@ Maintenant que nous comprenons comment fonctionne notre modèle à l'échelle gl
 
 ### Interprétatabilité individuelle
 
-Après avoir analysé le comportement global de notre modèle, nous avons également exploré son fonctionnement au niveau individuel, ce qui permet de comprendre précisément les raisons de chaque prédiction.
+Au niveau individuel, il est également possible de réaliser les Partial Dependance Plots avec cette fois-ci une courbe pour chaque haricot.
 
 <div align="center">
   <img 
@@ -416,6 +416,14 @@ Après avoir analysé le comportement global de notre modèle, nous avons égale
   <i>Dépendances partielles individuelles et moyennes pour chaque caractéristique </i>
   <br><br>
 </div>
+
+<br>
+
+On observe que la majorité des courbes ont une allure proche pour chacune des variables explicatives. Cela témoigne de la pertinence des Partial Dependance Plots réalisés au niveau global.
+
+Pour en revenir à l'interprétabilité au niveau local, nous allons choisir un haricots au hasard dans notre jeu test et chercher à comprendre la prédiction qui lui a été attribuée.
+
+
 
 LIME
 
