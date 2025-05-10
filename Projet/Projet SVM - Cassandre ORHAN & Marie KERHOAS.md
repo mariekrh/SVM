@@ -200,9 +200,9 @@ Nous avons choisi d'appliquer 7 modèles en conservant dans un premier temps les
 <br>
 </div>
 
-La matrice de confusion des différents modèles nous permet de nous renre compte des grains correctement associés à leur variété ainsi que des grains dont la prédiction a été d'une variété à laquelle ils n'appartiennent pas. Grâce à ces matrices, nous obtenons 2 métriques permettant d'évaluer la pertinence de nos modèle : l'accuracy et le F1 score.
+La matrice de confusion des différents modèles nous permet de nous rendre compte des grains correctement associés à leur variété ainsi que des grains dont la prédiction a été d'une variété à laquelle ils n'appartiennent pas. Grâce à ces matrices, nous obtenons 2 métriques permettant d'évaluer la pertinence de nos modèle : l'accuracy et le F1 score.
 
-On constate que l'ensemble des modèles apportent des prédictions proches de la réalité dans la classification des grains de haricots secs avec des accuracy et F1 score de 0,99 pour chacun des modèles testés. En observant plus précisément les matrices de confusion, on se rend compte qu'il y a davantage de grains dont la prédiction est d'appartenir à la variété Dermason alors qu'ils viennet de la variété Horoz que l'inverse. 
+On constate que l'ensemble des modèles apportent des prédictions proches de la réalité dans la classification des grains de haricots secs avec des accuracy et F1 score de 0,99 pour chacun des modèles testés. En observant plus précisément les matrices de confusion, on se rend compte qu'il y a davantage de grains dont la prédiction est d'appartenir à la variété Dermason alors qu'ils viennent de la variété Horoz que l'inverse. 
 
 Avec uniquement ces informations, il n'est pas facile de choisir un modèle plus pertinent que les autres.
 
@@ -261,7 +261,7 @@ Dans un deuxième temps, nous avons relancé nos modèles mais cette fois-ci en 
 <br>
 </div>
 
-Nous constatons peu de changements dans ces nouveaux modèles en comparaison aux originaux. En effets les accuracy et F1 score restent de 0.99 et seulement quelques changements mineurs sont observés dans les matrices de confusion.
+Nous constatons peu de changements dans ces nouveaux modèles en comparaison aux originaux. En effet les accuracy et F1 score restent de 0.99 et seulement quelques changements mineurs sont observés dans les matrices de confusion.
 
 ### La cross validation des nouveaux modèles
 
@@ -300,7 +300,7 @@ Avec une accuracy moyenne de 0.9922, le modèle Random Forest est celui le plus 
 
 ### Le meilleur modèle
 
-## Interprétatbilité du meilleur modèle
+## Interprétabilité du meilleur modèle
 
 
 ## Conclusion
