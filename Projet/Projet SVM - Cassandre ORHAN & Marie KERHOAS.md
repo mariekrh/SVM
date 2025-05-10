@@ -245,7 +245,7 @@ Comme nous pouvions nous y attendre, les accuracy moyennes sont proches au sein 
 
 ### Optimisation des modèles
 
-Résultats pour les test :
+Dans un deuxième temps, nous avons relancé nos modèles mais cette fois-ci en ayant modifié leurs paramètres afin de tenter de les optimiser. Pour cela nous avons utilisé GridSearch et RandomizedSearch. Les résultats obtenus sur le jeu test après la phase d'entrainement sur le jeu train sont les suivants.
 
 <div align="center">
 
@@ -261,7 +261,11 @@ Résultats pour les test :
 <br>
 </div>
 
+Nous constatons peu de changements dans ces nouveaux modèles en comparaison aux originaux. En effets les accuracy et F1 score restent de 0.99 et seulement quelques changements mineurs sont observés dans les matrices de confusion.
+
 ### La cross validation des nouveaux modèles
+
+Cette fois-ci également, nous avons effectué une cross validation avec 5 folds à partir des modèles obtenus.
 
 <br>
 
@@ -290,7 +294,7 @@ Résultats pour les test :
 <br>
 </div>
 
-Avec une accuracy de 0.9922, le modèle RF ...
+Avec une accuracy moyenne de 0.9922, le modèle Random Forest est celui le plus pertinent parmi les 5.
 
 <br>
 
