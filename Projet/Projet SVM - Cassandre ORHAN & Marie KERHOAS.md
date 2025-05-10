@@ -335,14 +335,9 @@ En étudiant l'interprétabilité globale de notre modèle, nous cherchons à co
   <br><br>
 </div>
 
-Via ce graphique, nous comprenons que l'excentricité et la longueur de l'axe majeur, avec des scores d'importance respectifs d'environ 0.08 et 0.07, sont les principaux facteurs influençant notre modèle tandis que les autres variables ont une plus faible importance.
+Via ce graphique, nous comprenons que l'excentricité et la longueur de l'axe majeur, avec des scores d'importance respectifs d'environ 0.08 et 0.07, sont les principaux facteurs influençant notre modèle tandis que les autres variables ont une plus faible importance. Cela est également visible lorsque l'on étudie la variabilité de l'influence de chaque caractéristique.
 
 <br>
-
-De plus, ...
-
-Enfin, dans le graphique de distribution de l'importance des variables, la largeur des boites indique la variabilité de l'influence de chaque caractéristique. Ainsi l'excentricité bien que dominante, présente une distribution plus étendue, indiquant que son effet peut fluctuer selon le contexte ou ses interactions avec les autres variables. Au contraire, les distributions plus étroites de l'étendue et de la solidité indiquent des influences plus constante, bien que mineure.
-
 <div align="center">
   <img 
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/12.png"
@@ -351,6 +346,10 @@ Enfin, dans le graphique de distribution de l'importance des variables, la large
   <i>Distribution de l'importance des variables </i>
   <br><br>
 </div>
+
+On constate ici que l'excentricité bien que dominante, présente une distribution plus étendue, indiquant que son effet peut fluctuer. Au contraire, les distributions plus étroites de l'étendue et de la solidité indiquent des influences plus constante, bien que mineure.
+
+<br>
 
 Par ailleurs, nous nous intéressons également aux intéractions potentielles pouvant exister entre les variables explicatives.
 
