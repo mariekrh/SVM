@@ -236,7 +236,7 @@ Afin d'évaluer la qualité des modèles précédemment élaborés, nous avons �
 | Logistic Regression| 0.9906   |
 | Random Forest      | 0.9919   |
 
-<i>Accuracy moyenne des modèles </i>
+<i> Accuracy moyenne des modèles </i>
 <br>
 </div>
 
