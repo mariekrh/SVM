@@ -182,9 +182,27 @@ Pour cela, nous avons du séparer notre jeu de données : en premier lieu en les
 
 ### Les modèles et les métriques
 
+Résultats pour les test :
+
+<div align="center">
+
+| Modèles| Matrice de confusion | Accuracy | F1 Score
+|--|:--:|:--:|:--:|
+|Linear SVC| <table><tr><td>400</td><td>0</td></tr><tr><td>6</td><td>366</td></tr></table> | 0.99 | 0.99 |
+|SDG Classifier| <table><tr><td>400</td><td>0</td></tr><tr><td>6</td><td>366</td></tr></table> | 0.99 | 0.99 |
+|SVM linear| <table><tr><td>400</td><td>0</td></tr><tr><td>6</td><td>366</td></tr></table> | 0.99 | 0.99 |
+|SVM rbf| <table><tr><td>399</td><td>1</td></tr><tr><td>5</td><td>367</td></tr></table> | 0.99 | 0.99 |
+|SVM poly| <table><tr><td>400</td><td>0</td></tr><tr><td>8</td><td>364</td></tr></table> | 0.99 | 0.99 |
+|Logistic Regression| <table><tr><td>400</td><td>0</td></tr><tr><td>6</td><td>366</td></tr></table> | 0.99 | 0.99 |
+|Random Forest| <table><tr><td>400</td><td>0</td></tr><tr><td>5</td><td>367</td></tr></table> | 0.99 | 0.99 |
+
+<i>Légende </i>
+<br>
+</div>
+
 ### La cross validation des modèles d'origine
 
-Afin d'évaluer la qualité des modèles précédemment élaborés, nous avons eu recours à de la cross validation en choisissant un nombre de K-folds de 5.
+Afin d'évaluer la qualité des modèles précédemment élaborés, nous avons également eu recours à de la cross validation en choisissant un nombre de K-folds de 5.
 
 <br>
 
