@@ -126,7 +126,7 @@ L'étape suivante a consisté à étudier les coefficients des corrélations ent
 
 <br>
 
-Dans notre cas, nous avons constaté que des coefficients très importants étaient présents dans la matrice de corrélation obtenue. Cela nous a contraint à exclure 5 des nos variables : Area, Perimeter, Aspect Ratio, Equivalent diameter et Compactness. La seconde matrice de corrélation réalisée après la suppression des colonnes était donc la suivante :
+Dans notre cas, nous avons constaté que des coefficients très importants étaient présents dans la matrice de corrélation obtenue. Cela nous a contraint à exclure 5 des nos variables : Area, Perimeter, Aspect Ratio, Equivalent diameter et Compactness. La matrice de corrélation réalisée après la suppression des colonnes est donc la suivante :
 
 <br>
 
@@ -141,7 +141,6 @@ Dans notre cas, nous avons constaté que des coefficients très importants étai
 
 <br>
 
-Ces coefficients sont plus acceptables que dans la matrice initiale.
 
 ### Les outliers
 
@@ -157,6 +156,25 @@ Par la suite, nous avons choisi de rééquilibrer nos données en utilisant un r
 ## Modélisation
 
 La seconde phase de notre étude a consiter à mettre en place des modèles afin de classer correctement les grains selon leur variété. 
+
+### Séparation du jeu de données et standardisation
+
+Pour cela, nous avons du séparer notre jeu de données : en premier lieu en les X (variables explicatives) et le y (variable d'intérêt recodée en 0 pour Dermason et 1 pour Horoz), mais également entre le jeu d'entraînement (80%) et le jeu de test (20%). Une fois cette séparation effectuée, nous avons standardiser nos X_train et X_test afin de mettre sur une même échelle nos différentes variables explicatives et ce de façon indépendente entre les jeux train et test.
+
+### Les modèles et les métriques
+
+### La cross validation des modèles d'origine
+
+### Optimisation des modèles
+
+### La cross validation des nouveaux modèles
+
+
+
+## Interprétatbilité du meilleur modèle
+
+
+## Conclusion
 
 
 <div align="center">
