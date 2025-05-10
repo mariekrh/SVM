@@ -466,27 +466,6 @@ Ces élements confirment au niveau local, pour cet individu, que les trois carac
 
 <br>
 
-Il est également possible de s'intéresser à l'interprétabilité locale de l'ensemble des individus. Pour cela, nous réalisons un graphique Beeswarm qui met en avant la distribution des Shapley Values.
-
-<br>
-
-<div align="center">
-  <img 
-  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/16.png"
-  width="600" />
-  <br>
-  <i>Beeswarm des valeurs shap </i>
-  <br><br>
-</div>
-
-<br>
-
-Dans ce graphique, ...
-* Une séparation claire entre les deux classes sur les variables clés, notamment pour l'excentricité et la longueur de l'axe majeur
-* Les valeurs négatives (en bleu) correspondent généralement à la classe DERMASON, tandis que les valeurs positives (en rose) sont associées à la classe HOROZ
-* Pour la rondeur, la tendance s'inverse: les valeurs positives (en rose) favorisent DERMASON et les négatives (en bleu) indiquent HOROZ
-
-Le gradient de couleur du bleu au rose illustre également l'intensité de l'effet, confirmant que les haricots avec une excentricité élevée et un axe majeur plus long sont systématiquement classés comme HOROZ, tandis que ceux avec une rondeur plus élevée sont identifiés comme DERMASON.
 
 ## Conclusion
 
