@@ -184,6 +184,21 @@ Pour cela, nous avons du séparer notre jeu de données : en premier lieu en les
 
 ### La cross validation des modèles d'origine
 
+Afin d'évaluer la qualité des modèles précédemment élaborés, nous avons eu recours à de la cross validation en choisissant un nombre de K-folds de 5.
+
+<br>
+
+<div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/7.png"
+  width="600" />
+  <br>
+  <i>Légende </i>
+  <br><br>
+</div>
+
+<br>
+
 ### Optimisation des modèles
 
 ### La cross validation des nouveaux modèles
