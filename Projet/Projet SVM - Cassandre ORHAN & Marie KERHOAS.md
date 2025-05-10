@@ -437,7 +437,7 @@ Pour en revenir à l'interprétabilité au niveau local, nous allons choisir un 
 <br>
 
 On observe que la prédiction qui lui a été attribuée est 0, cela signifie qu'il est classé appartenant à la variété Dermason. Cette prédiction correspond à la réalité. Mais ce qui nous intéresse plus spécifiquement sont les raisons de cette prédiction. 
-On constate que les caractéristiques du haricots qui ont eu le plus d'importance sont le fait que son Eccentricity soit inférieure ou égale à -0.88 (-1.35) ainsi que le fait que sont MajorAxisLength soit suffisamment petit (-1.29). Nous sommes ainsi en mesure de fournir des indications plus compréhensibles sur les raison de la prédiction fournie à cet individu.
+On constate que les caractéristiques du haricot qui ont eu le plus d'importance sont le fait que son Eccentricity soit inférieure ou égale à -0.88 (-1.35) ainsi que le fait que son MajorAxisLength soit suffisamment petit (-1.29). Nous sommes ainsi en mesure de fournir des indications plus compréhensibles sur les raisons de la prédiction fournie à cet individu.
 
 Il est également possible d'employer une seconde méthode d'analyse locale : via les valeurs de Shapley.
 
@@ -461,7 +461,7 @@ Cette analyse nous a permis de quantifier précisément la contribution de chaqu
 * La rondeur a une influence modérée (-0.09), renforçant la classification DERMASON
 * La longueur de l'axe mineur, l'étendue et la solidité ont des contributions mineures mais toujours dans la même direction
 
-Ces élements confirme au niveau local, pour cet individu, que les trois caractéristiques principales identifiées dans l'analyse globale (excentricité, longueur de l'axe majeur et rondeur) sont déterminantes.
+Ces élements confirment au niveau local, pour cet individu, que les trois caractéristiques principales identifiées dans l'analyse globale (excentricité, longueur de l'axe majeur et rondeur) sont déterminantes.
 
 <br>
 
