@@ -54,7 +54,7 @@ Etant donné notre choix de nous focaliser sur deux des catégories proposées, 
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/1.png"
   width="600" />
   <br>
-  <i>Légende </i>
+  <i>Répartition des variétés de haricots </i>
   <br><br>
 </div>
 
@@ -71,7 +71,7 @@ Par ailleurs, nous avons également cherché à connaitre la distribution des va
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/2.png"
   width="600" />
   <br>
-  <i>Légende </i>
+  <i>Distribution des caractéristiques morphologiques par variété de haricot </i>
   <br><br>
 </div>
 
@@ -86,7 +86,7 @@ Notre choix s'est alors porté sur 2 variétés semblant présenter des caracté
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/3.png"
   width="600" />
   <br>
-  <i>Légende </i>
+  <i>Répartition des grains entre les variétés Dermason et Horoz </i>
   <br><br>
 </div>
 
@@ -103,7 +103,7 @@ A présent notre choix de variétés fait, nous avons une nouvelle fois réalis�
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/4.png"
   width="600" />
   <br>
-  <i>Légende </i>
+  <i>Distribution des caractéristiques morphologiques entre les variétés séléectionnées </i>
   <br><br>
 </div>
 
@@ -120,7 +120,7 @@ L'étape suivante a consisté à étudier les coefficients des corrélations ent
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/5.png"
   width="600" />
   <br>
-  <i>Légende </i>
+  <i>Matrice de corrélation de toute les variables </i>
   <br><br>
 </div>
 
@@ -135,7 +135,7 @@ Dans notre cas, nous avons constaté que des coefficients très importants étai
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/6.png"
   width="600" />
   <br>
-  <i>Légende </i>
+  <i>Matrice de corrélation des variables après suppression des variables fortement corrélées </i>
   <br><br>
 </div>
 
@@ -158,7 +158,7 @@ Le test a révélé que seules les variables Solidity et Roundness présentaient
   src="https://github.com/user-attachments/assets/ae43b5f4-f8b0-498b-ab57-7764eb0f5c91"
   width="600" />
   <br>
-  <i>Légende </i>
+  <i>Visualisation de la séparation des variétés par les variables solidity et roudness </i>
   <br><br>
 </div>
 
@@ -197,7 +197,7 @@ Nous avons choisi d'appliquer 7 modèles en conservant dans un premier temps les
 |Logistic Regression| <table><tr><td>400</td><td>0</td></tr><tr><td>6</td><td>366</td></tr></table> | 0.99 | 0.99 |
 |Random Forest| <table><tr><td>400</td><td>0</td></tr><tr><td>5</td><td>367</td></tr></table> | 0.99 | 0.99 |
 
-<i>Légende </i>
+<i>Indicateurs de performances sans la cross validation </i>
 <br>
 </div>
 
@@ -218,7 +218,7 @@ Afin d'évaluer la qualité des modèles précédemment élaborés, nous avons �
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/7.png"
   width="600" />
   <br>
-  <i>Légende </i>
+  <i>Evolution de l'accuracy à travers 5 fold de cross validation </i>
   <br><br>
 </div>
 
@@ -236,7 +236,7 @@ Afin d'évaluer la qualité des modèles précédemment élaborés, nous avons �
 | Logistic Regression| 0.9906   |
 | Random Forest      | 0.9919   |
 
-<i>Légende </i>
+<i>Accuracy moyenne des modèles </i>
 <br>
 </div>
 
@@ -257,7 +257,7 @@ Dans un deuxième temps, nous avons relancé nos modèles mais cette fois-ci en 
 |Logistic Regression| <table><tr><td>400</td><td>0</td></tr><tr><td>6</td><td>366</td></tr></table> | 0.99 | 0.99 |
 |Random Forest| <table><tr><td>400</td><td>0</td></tr><tr><td>5</td><td>367</td></tr></table> | 0.99 | 0.99 |
 
-<i>Légende </i>
+<i>Indicateurs de performance des modèles optimisés </i>
 <br>
 </div>
 
@@ -274,7 +274,7 @@ Cette fois-ci également, nous avons effectué une cross validation avec 5 folds
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/8.png"
   width="600" />
   <br>
-  <i>Légende </i>
+  <i>Cross validation des modèles optimisés </i>
   <br><br>
 </div>
 
@@ -290,7 +290,7 @@ Cette fois-ci également, nous avons effectué une cross validation avec 5 folds
 | Logistic Regression| 0.9909   |
 | Random Forest      | 0.9922   |
 
-<i>Légende </i>
+<i>,>Accuracy moyenne des modèles optimisés </i>
 <br>
 </div>
 
