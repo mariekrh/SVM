@@ -439,9 +439,7 @@ Pour en revenir à l'interprétabilité au niveau local, nous allons choisir un 
 On observe que la prédiction qui lui a été attribuée est 0, cela signifie qu'il est classé appartenant à la variété Dermason. Cette prédiction correspond à la réalité. Mais ce qui nous intéresse plus spécifiquement sont les raisons de cette prédiction. 
 On constate que les caractéristiques du haricots qui ont eu le plus d'importance sont le fait que son Eccentricity soit inférieure ou égale à -0.88 (-1.35) ainsi que le fait que sont MajorAxisLength soit suffisamment petit (-1.29). Nous sommes ainsi en mesure de fournir des indications plus compréhensibles sur les raison de la prédiction fournie à cet individu.
 
-Pour cela, nous allons commencer par analyser les valeurs de shapley 
-
-Shapley value
+Une seconde méthode consiste à passer par les Shapley Values.
 
 <br>
 
