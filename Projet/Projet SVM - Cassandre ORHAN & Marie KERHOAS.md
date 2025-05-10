@@ -298,6 +298,24 @@ Avec une accuracy moyenne de 0.9922, le modèle Random Forest est celui le plus 
 
 ### Le meilleur modèle
 
+Au vu des résultats obtenus, si nous ne devons retenir qu'un modèle se sera celui SVM avec un kernel rbf de départ. Ses paramètres sont les suivants : 
+
+{'C': 1.0,
+ 'break_ties': False,
+ 'cache_size': 200,
+ 'class_weight': None,
+ 'coef0': 0.0,
+ 'decision_function_shape': 'ovr',
+ 'degree': 3,
+ 'gamma': 'scale',
+ 'kernel': 'rbf',
+ 'max_iter': -1,
+ 'probability': False,
+ 'random_state': 42,
+ 'shrinking': True,
+ 'tol': 0.001,
+ 'verbose': False}
+
 ## Interprétabilité du meilleur modèle
 
 
