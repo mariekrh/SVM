@@ -380,7 +380,7 @@ Enfin, dans le graphique de distribution de l'importance des variables, la large
   <br><br>
 </div>
 
-Maintenant que nous comprenons comment fonctionne notre modèle à l'échelle globale, examinons son comportement au niveau individuel avec l'interprétation locale, qui nous révélera pourquoi chaque haricot est classé dans une catégorie spécifique.
+Maintenant que nous comprenons comment fonctionne notre modèle à l'échelle globale, examinons son comportement au niveau individuel avec l'interprétation locale, qui nous révélera pourquoi un haricot spécifique est classé comme appartenant à une variété et pas à l'autre.
 
 ### Interprétatabilité individuelle
 
