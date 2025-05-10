@@ -174,7 +174,7 @@ Par la suite, nous avons choisi de rééquilibrer nos données en utilisant un r
 
 ## Modélisation
 
-La seconde phase de notre étude a consiter à mettre en place des modèles afin de classer correctement les grains selon leur variété. 
+La seconde phase de notre étude a consité à mettre en place des modèles afin de classer correctement les grains selon leur variété. 
 
 ### Séparation du jeu de données et standardisation
 
