@@ -199,6 +199,26 @@ Afin d'évaluer la qualité des modèles précédemment élaborés, nous avons e
 
 <br>
 
+<div align="center">
+
+| Modèles            | Accuracy |
+|--------------------|:--------:|
+| Linear SVC         | 0.9912   |
+| SDG Classifier     | 0.9903   |
+| SVM linear         | 0.9919   |
+| SVM rbf            | 0.9929   |
+| SVM ply            | 0.9893   |
+| Logistic Regression| 0.9906   |
+| Random Forest      | 0.9919   |
+
+<i>Légende </i>
+<br>
+</div>
+
+Avec une accuracy de 0.9929, le modèle SVM ref ...
+
+<br>
+
 ### Optimisation des modèles
 
 ### La cross validation des nouveaux modèles
