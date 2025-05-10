@@ -4,7 +4,7 @@ M2 ECAP <br>
 
 <h3 align="center" style="font-size: 28px;">
 Projet de Machine Learning : <br>
-Le cas des haricots secs
+Prédiction de la variété d'haricots secs selon leurs caractéristiques
 </h3>
 
 <h4 align="center"> 
