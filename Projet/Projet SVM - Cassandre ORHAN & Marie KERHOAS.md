@@ -406,7 +406,7 @@ Maintenant que nous comprenons comment fonctionne notre modèle à l'échelle gl
 
 ### Interprétatabilité individuelle
 
-
+Après avoir analysé le comportement global de notre modèle, nous avons également exploré son fonctionnement au niveau individuel, ce qui permet de comprendre précisément les raisons de chaque prédiction.
 
 <div align="center">
   <img 
@@ -419,6 +419,8 @@ Maintenant que nous comprenons comment fonctionne notre modèle à l'échelle gl
 
 LIME
 
+Pour cela, nous allons commencer par analyser les valeurs de shapley 
+
 Shapley value
 
 <br>
@@ -428,11 +430,22 @@ Shapley value
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/15.png"
   width="600" />
   <br>
-  <i>Légende </i>
+  <i> Valeur de Shapley </i>
   <br><br>
 </div>
 
 <br>
+
+L'analyse locale via les valeurs de Shapley nous a permis de quantifier précisément la contribution de chaque caractéristique à une prédiction spécifique. Pour un grain de haricot particulier, nous observons que:
+
+* L'excentricité exerce l'influence la plus forte avec une valeur de -0.19, poussant la prédiction vers la classe DERMASON
+* La longueur de l'axe majeur contribue également de manière significative (-0.17) à identifier le grain comme DERMASON
+* La rondeur a une influence modérée (-0.09), renforçant la classification DERMASON
+* La longueur de l'axe mineur, l'étendue et la solidité ont des contributions mineures mais toujours dans la même direction
+
+Ces élements confirme que les trois caractéristiques principales identifiées dans l'analyse globale (excentricité, longueur de l'axe majeur et rondeur) déterminent également les décisions au niveau individuel.
+
+Nous allons également regarder la distribution des valeurs Shap pour toute notre jeu de données.
 
 beeswarm (Contribution des variables)
 
@@ -443,15 +456,19 @@ beeswarm (Contribution des variables)
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/16.png"
   width="600" />
   <br>
-  <i>Légende </i>
+  <i>Beeswarm des valeurs shap </i>
   <br><br>
 </div>
 
 <br>
 
+* Une séparation claire entre les deux classes sur les variables clés, notamment pour l'excentricité et la longueur de l'axe majeur
+* Les valeurs négatives (en bleu) correspondent généralement à la classe DERMASON, tandis que les valeurs positives (en rose) sont associées à la classe HOROZ
+* Pour la rondeur, la tendance s'inverse: les valeurs positives (en rose) favorisent DERMASON et les négatives (en bleu) indiquent HOROZ
+
+Le gradient de couleur du bleu au rose illustre également l'intensité de l'effet, confirmant que les haricots avec une excentricité élevée et un axe majeur plus long sont systématiquement classés comme HOROZ, tandis que ceux avec une rondeur plus élevée sont identifiés comme DERMASON.
 
 ## Conclusion
-
 
 Cette étude a porté sur la classification des haricots secs Dermason et Horoz à partir de leurs caractéristiques morphologiques. Nous avons travaillé sur un jeu de données contenant 13 611 grains de 7 variétés différentes, et avons sélectionné ces deux variétés après une analyse exploratoire initiale.
 
