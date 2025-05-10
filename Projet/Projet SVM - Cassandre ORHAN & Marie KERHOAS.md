@@ -219,13 +219,13 @@ Afin d'évaluer la qualité des modèles précédemment élaborés, nous avons �
 
 <div align="center">
 
-| Modèles            | Accuracy |
+| Modèles            | Accuracy moyenne |
 |--------------------|:--------:|
 | Linear SVC         | 0.9912   |
 | SDG Classifier     | 0.9903   |
 | SVM linear         | 0.9919   |
 | SVM rbf            | 0.9929   |
-| SVM ply            | 0.9893   |
+| SVM poly            | 0.9893   |
 | Logistic Regression| 0.9906   |
 | Random Forest      | 0.9919   |
 
@@ -233,13 +233,60 @@ Afin d'évaluer la qualité des modèles précédemment élaborés, nous avons �
 <br>
 </div>
 
-Avec une accuracy de 0.9929, le modèle SVM ref ...
+Avec une accuracy de 0.9929, le modèle SVM rbf ...
 
 <br>
 
 ### Optimisation des modèles
 
+Résultats pour les test :
+
+<div align="center">
+
+| Modèles| Matrice de confusion | Accuracy | F1 Score
+|--|:--:|:--:|:--:|
+|Linear SVC| <table><tr><td>400</td><td>0</td></tr><tr><td>6</td><td>366</td></tr></table> | 0.99 | 0.99 |
+|SDG Classifier| <table><tr><td>399</td><td>1</td></tr><tr><td>6</td><td>366</td></tr></table> | 0.99 | 0.99 |
+|SVM rbf| <table><tr><td>400</td><td>0</td></tr><tr><td>6</td><td>366</td></tr></table> | 0.99 | 0.99 |
+|Logistic Regression| <table><tr><td>400</td><td>0</td></tr><tr><td>6</td><td>366</td></tr></table> | 0.99 | 0.99 |
+|Random Forest| <table><tr><td>400</td><td>0</td></tr><tr><td>5</td><td>367</td></tr></table> | 0.99 | 0.99 |
+
+<i>Légende </i>
+<br>
+</div>
+
 ### La cross validation des nouveaux modèles
+
+<br>
+
+<div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/8.png"
+  width="600" />
+  <br>
+  <i>Légende </i>
+  <br><br>
+</div>
+
+<br>
+
+<div align="center">
+
+| Modèles            | Accuracy moyenne |
+|--------------------|:--------:|
+| Linear SVC         | 0.9918   |
+| SDG Classifier     | 0.9906   |
+| SVM rbf            | 0.9919   |
+| Logistic Regression| 0.9909   |
+| Random Forest      | 0.9922   |
+
+<i>Légende </i>
+<br>
+</div>
+
+Avec une accuracy de 0.9922, le modèle RF ...
+
+<br>
 
 
 
