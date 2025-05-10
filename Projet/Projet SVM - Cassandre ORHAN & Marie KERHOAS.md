@@ -146,8 +146,10 @@ Dans notre cas, nous avons constaté que des coefficients très importants étai
 
 Nous avons par la suite chercher à étudier les possibles valeur atypique et avons pour cela appliqué un test ESD qui permet de détecter automatiquement un ou plusieurs outliers dans une distribution supposée normale en comparant l'écart d'une observation au reste de l'échantillon. 
 Le test a révélé que seules les variables Solidity et Roundness présentaient respectivement 100 et 5 valeurs atypiques. Nous avons décidé de ne pas les corriger, car ces variables conservent un pouvoir discriminant (comme le montre la graphique ci-dessous) entre les classes Dermason et Horoz, sans être structurellement perturbées par la présence de quelques valeurs extrêmes.
-
+<!--
 ![image sur Github](https://github.com/user-attachments/assets/ae43b5f4-f8b0-498b-ab57-7764eb0f5c91)
+-->
+
 
 <br>
 
