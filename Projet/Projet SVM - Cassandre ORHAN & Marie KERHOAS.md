@@ -188,6 +188,9 @@ La seconde phase de notre étude a consiter à mettre en place des modèles afin
 
 ## Conclusion
 
+Bibliothèque image 
+![image sur Github](https://github.com/user-attachments/assets/b83a530b-67f1-4d2c-8abd-0315de730387)
+
 
 
 
