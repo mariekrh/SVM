@@ -319,6 +319,61 @@ Au vu des résultats obtenus, si nous ne devons retenir qu'un modèle se sera ce
 ## Interprétabilité du meilleur modèle
 
 
+<div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/9.png"
+  width="600" />
+  <br>
+  <i>Légende </i>
+  <br><br>
+</div>
+
+<div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/10.png"
+  width="600" />
+  <br>
+  <i>Légende </i>
+  <br><br>
+</div>
+
+<div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/11.png"
+  width="600" />
+  <br>
+  <i>Légende </i>
+  <br><br>
+</div>
+
+<div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/12.png"
+  width="600" />
+  <br>
+  <i>Légende </i>
+  <br><br>
+</div>
+
+<div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/13.png"
+  width="600" />
+  <br>
+  <i>Légende </i>
+  <br><br>
+</div>
+
+<div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/14.png"
+  width="600" />
+  <br>
+  <i>Légende </i>
+  <br><br>
+</div>
+
+
 ## Conclusion
 
 
