@@ -94,7 +94,7 @@ Notre choix s'est alors porté sur 2 variétés semblant présenter des caracté
 
 ### Les distribution des caractéristiques selon les 2 variétes
 
-A présent notre choix de variétés fait, nous avons une nouvelle fois réaliser des graphiques présentant la distribution des caractéristiques mais cette fois, seulement selon les variétés Dermason et Horoz.
+A présent notre choix de variétés fait, nous avons une nouvelle fois réalisé des graphiques présentant la distribution des caractéristiques mais cette fois, seulement selon les variétés Dermason et Horoz.
 
 <br>
 
@@ -126,9 +126,7 @@ L'étape suivante a consisté à étudier les coefficients des corrélations ent
 
 <br>
 
-Dans notre cas, nous avons constaté que des coefficients très importants étaient présents dans la matrice de corrélation obtenue. Cela nous a contraint à exclure 5 des nos variables. 
-
-La seconde matrice de corrélation réalisée après la suppression des colonnes était donc la suivante :
+Dans notre cas, nous avons constaté que des coefficients très importants étaient présents dans la matrice de corrélation obtenue. Cela nous a contraint à exclure 5 des nos variables : Area, Perimeter, Aspect Ratio, Equivalent diameter et Compactness. La seconde matrice de corrélation réalisée après la suppression des colonnes était donc la suivante :
 
 <br>
 
@@ -143,11 +141,22 @@ La seconde matrice de corrélation réalisée après la suppression des colonnes
 
 <br>
 
+Ces coefficients sont plus acceptables que dans la matrice initiale.
+
+### Les outliers
+
+...
+
+### Le resample
+
+Par la suite, nous avons choisi de rééquilibrer nos données en utilisant un resample. Cela nous a permis d'effectuer une sélection parmi les grains de la variété Dermason afin d'en conserver autant que ceux disponibles pour la variété Horoz. Ainsi la différence entre les proportion des espèces initiallement présentes ne sera pas un facteur pouvant affecter les prédictions que nous réaliserons.
 
 
+<br>
 
+## Modélisation
 
-## 
+La seconde phase de notre étude a consiter à mettre en place des modèles afin de classer correctement les grains selon leur variété. 
 
 
 <div align="center">
