@@ -336,7 +336,7 @@ En étudiant l'interprétabilité globale de notre modèle, nous cherchons à co
 
 Via ce graphique, nous comprenons que l'excentricité et la longueur de l'axe majeur, avec des scores d'importances respectifs d'environ 0.08 et 0.07, sont les principaux facteurs influençant notre modèle tandis que les autres variables ont une plus faible importance.
 
-Par ailleurs, nous nous intéressons également aux intéractions potentielles pouvant exister entre les varibales explicatives.
+Par ailleurs, nous nous intéressons également aux intéractions potentielles pouvant exister entre les variables explicatives.
 
 <div align="center">
   <img 
