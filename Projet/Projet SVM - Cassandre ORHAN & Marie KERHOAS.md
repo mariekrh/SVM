@@ -180,13 +180,101 @@ La seconde phase de notre étude a consiter à mettre en place des modèles afin
   <br><br>
 </div>
 
-`code`
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projet M2 ECAP – Classification des haricots secs</title>
+</head>
+<body>
+  <h1 align="center">M2 ECAP – Machine Learning<br>Classification des haricots secs</h1>
+  <h3 align="center">Cassandre Orhan & Marie Kerhoas – Mai 2025</h3>
+  <hr>
 
-## Modèles
+  <h2>1. Introduction</h2>
+  <p>
+    Ce projet a pour objectif d'étudier un jeu de données morphologiques de haricots secs afin de construire un modèle de machine learning capable de prédire leur variété (Seker, Barbunya, Bombay, Cali, Dermosan, Horoz et Sira).
+    Pour cela, nous avons mené une analyse complète, allant de l'exploration des données à la modélisation supervisée, en privilégiant notamment les SVM (Support Vector Machines).
+  </p>
 
-...
+  <h2>2. Présentation des données</h2>
+  <p>
+    Le jeu de données contient des caractéristiques morphologiques extraites d’images de haricots. Parmi elles :
+  </p>
+  <ul>
+    <li><b>Area, Perimeter :</b> Mesures de surface et de contour</li>
+    <li><b>Major/Minor axis length :</b> Dimensions principales</li>
+    <li><b>Aspect ratio, Eccentricity :</b> Formes géométriques</li>
+    <li><b>Roundness, Solidity, Compactness :</b> Indices de circularité</li>
+    <li><b>14 ShapeFactors :</b> Combinaisons mathématiques de formes</li>
+    <li><b>Class :</b> La variable cible représentant la variété du haricot</li>
+  </ul>
 
-## Conclusion
+  <h2>3. Nettoyage et préparation</h2>
+  <p>
+    Aucun traitement de données manquantes n’a été nécessaire. Nous avons cependant :
+  </p>
+  <ul>
+    <li>Standardisé les variables numériques avec <code>StandardScaler</code></li>
+    <li>Appliqué un <b>winsorizing</b> pour réduire l’effet des valeurs extrêmes</li>
+    <li>Converti la cible en labels numériques pour les modèles de classification</li>
+  </ul>
+
+  <h2>4. Analyse exploratoire</h2>
+  <p>
+    Une exploration visuelle avec <code>seaborn</code> et <code>plotly</code> a permis de :
+  </p>
+  <ul>
+    <li>Observer la distribution des variables par classe</li>
+    <li>Détecter d’éventuelles redondances (forte corrélation entre certaines mesures comme Area et Convex Area)</li>
+  </ul>
+
+  <h2>5. Modélisation</h2>
+  <p>
+    Plusieurs modèles de classification ont été testés :
+  </p>
+  <ul>
+    <li><b>Régression logistique</b></li>
+    <li><b>SVM linéaire et SVM à noyau RBF</b></li>
+  </ul>
+  <p>
+    Après recherche d’hyperparamètres via <code>GridSearchCV</code>, les meilleurs résultats ont été obtenus avec <b>le modèle SVM à noyau RBF</b>.
+  </p>
+
+  <h2>6. Évaluation</h2>
+  <p>
+    Les performances des modèles ont été comparées à l’aide des métriques suivantes :
+  </p>
+  <ul>
+    <li>Accuracy</li>
+    <li>F1-score</li>
+    <li>Recall / Precision</li>
+    <li>Matrice de confusion</li>
+  </ul>
+  <p>
+    Le modèle final atteint une accuracy supérieure à 90%, avec une bonne généralisation sur l’ensemble test.
+  </p>
+
+  <h2>7. Interprétabilité</h2>
+  <p>
+    Pour comprendre les décisions du modèle, nous avons utilisé :
+  </p>
+  <ul>
+    <li><b>Permutation Feature Importance :</b> importance globale des variables</li>
+    <li><b>SHAP :</b> contributions locales de chaque variable sur des prédictions individuelles</li>
+  </ul>
+
+  <h2>8. Conclusion</h2>
+  <p>
+    Ce projet a permis de démontrer l’efficacité des modèles d’apprentissage supervisé sur un problème de classification multi-classes à partir de données morphologiques simples.
+    Le modèle SVM s’est montré performant, et les outils d’interprétabilité nous ont offert une meilleure compréhension du processus de décision.
+  </p>
+
+  <hr>
+  <p><i>Ce document accompagne le notebook Python principal, contenant les codes, visualisations et résultats détaillés.</i></p>
+</body>
+</html>
+
 
 Bibliothèque image 
 ![image sur Github](https://github.com/user-attachments/assets/b83a530b-67f1-4d2c-8abd-0315de730387)
