@@ -454,6 +454,7 @@ Il est également possible d'employer une seconde méthode d'analyse locale : vi
 
 <br>
 
+
 Cette analyse nous a permis de quantifier précisément la contribution de chaque caractéristique à une prédiction spécifique. Pour le même grain de haricot, nous observons que:
 
 * L'excentricité exerce l'influence la plus forte avec une valeur de -0.19, poussant la prédiction vers la classe DERMASON
@@ -480,6 +481,7 @@ Il est également possible de s'intéresser à l'interprétabilité locale de l'
 
 <br>
 
+Dans ce graphique, ...
 * Une séparation claire entre les deux classes sur les variables clés, notamment pour l'excentricité et la longueur de l'axe majeur
 * Les valeurs négatives (en bleu) correspondent généralement à la classe DERMASON, tandis que les valeurs positives (en rose) sont associées à la classe HOROZ
 * Pour la rondeur, la tendance s'inverse: les valeurs positives (en rose) favorisent DERMASON et les négatives (en bleu) indiquent HOROZ
