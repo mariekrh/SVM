@@ -465,9 +465,7 @@ Ces élements confirment au niveau local, pour cet individu, que les trois carac
 
 <br>
 
-Nous allons également regarder la distribution des valeurs Shap pour toute notre jeu de données.
-
-beeswarm (Contribution des variables)
+Il est également possible de s'intéresser à l'interprétabilité locale de l'ensemble des individus. Pour cela, nous réalisons un graphique Beeswarm qui met en avant la distribution des Shapley Values.
 
 <br>
 
