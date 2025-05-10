@@ -414,21 +414,13 @@ Maintenant que nous comprenons comment fonctionne notre modèle à l'échelle gl
 ## Conclusion
 
 
-<div align="center">
+Cette étude a porté sur la classification des haricots secs Dermason et Horoz à partir de leurs caractéristiques morphologiques. Nous avons travaillé sur un jeu de données contenant 13 611 grains de 7 variétés différentes, et avons sélectionné ces deux variétés après une analyse exploratoire initiale.
+Lors du prétraitement, nous avons supprimé 5 variables fortement corrélées (Area, Perimeter, Aspect Ratio, Equivalent diameter et Compactness) pour éviter la redondance. Nous avons identifié des valeurs atypiques dans les variables Solidity (100) et Roundness (5), mais les avons conservées car elles gardaient un pouvoir discriminant. Un rééquilibrage des classes a été effectué pour éviter les biais liés aux différences de proportions entre variétés.
+Pour la modélisation, nous avons testé 7 modèles différents (Linear SVC, SDG Classifier, SVM avec différents kernels, Logistic Regression et Random Forest). Tous ont atteint une précision de 99% après standardisation des données. La validation croisée à 5 plis a identifié le SVM avec kernel RBF comme le modèle le plus stable, avec une accuracy moyenne de 0.9929. L'optimisation des hyperparamètres n'a pas significativement amélioré ces performances.
+L'interprétation globale du modèle a montré que l'excentricité et la longueur de l'axe majeur sont les facteurs les plus importants pour la classification, avec des scores d'importance de 0.08 et 0.07 respectivement. Les graphiques de dépendance partielle ont révélé une relation négative pour la rondeur et la solidité (favorisant la classe DERMASON) et positive pour l'excentricité et la longueur de l'axe majeur (favorisant la classe HOROZ). L'étude s'est terminée par une interprétation locale des prédictions sur un échantillon aléatoire de notre jeu de données.
+Ces résultats confirment que les haricots Horoz sont généralement plus allongés que les Dermason, qui sont plus arrondis, démontrant l'efficacité des techniques de machine learning pour la classification de variétés de graines.
 
-| Item         | Price | In stock |
-|--------------|:-----:|:--------:|
-| Juicy Apples |  1.99 |     739  |
-| Bananas      |  1.89 |       6  |
-
-<i>Légende </i>
-<br><br>
-</div>
-
-
-<div align="center">
-  <img 
-  src="https://github.com/mariekrh/SVM/blob/8913cb045d7b9301b2b6717a61fe809d0cdef41b/Projet/Images/Logo_IAE.jpg"
+src="https://github.com/mariekrh/SVM/blob/8913cb045d7b9301b2b6717a61fe809d0cdef41b/Projet/Images/Logo_IAE.jpg"
   width="600" />
   <br>
   <i>Légende </i>
