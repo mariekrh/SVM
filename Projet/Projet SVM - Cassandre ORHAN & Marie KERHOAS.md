@@ -319,7 +319,7 @@ Au vu des résultats obtenus, si nous ne devons retenir qu'un modèle se sera ce
 
 ## Interprétabilité du meilleur modèle
 
-La dernière phase de cette étude concerne l'interpprétabilité du modèle choisi. Nous la réaliserons à un niveau global puis local.
+La dernière phase de cette étude concerne l'interprétabilité du modèle choisi. Nous la réaliserons à un niveau global puis local.
 
 ### Interprétatabilité globale
 
