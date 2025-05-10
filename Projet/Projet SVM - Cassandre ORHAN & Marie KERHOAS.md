@@ -290,7 +290,7 @@ Cette fois-ci également, nous avons effectué une cross validation avec 5 folds
 | Logistic Regression| 0.9909   |
 | Random Forest      | 0.9922   |
 
-<i>,>Accuracy moyenne des modèles optimisés </i>
+<i> Accuracy moyenne des modèles optimisés </i>
 <br>
 </div>
 
