@@ -439,7 +439,7 @@ Pour en revenir à l'interprétabilité au niveau local, nous allons choisir un 
 On observe que la prédiction qui lui a été attribuée est 0, cela signifie qu'il est classé appartenant à la variété Dermason. Cette prédiction correspond à la réalité. Mais ce qui nous intéresse plus spécifiquement sont les raisons de cette prédiction. 
 On constate que les caractéristiques du haricots qui ont eu le plus d'importance sont le fait que son Eccentricity soit inférieure ou égale à -0.88 (-1.35) ainsi que le fait que sont MajorAxisLength soit suffisamment petit (-1.29). Nous sommes ainsi en mesure de fournir des indications plus compréhensibles sur les raison de la prédiction fournie à cet individu.
 
-Une seconde méthode consiste à passer par les Shapley Values.
+Il est également possible d'employer une seconde méthode d'analyse locale : via les valeurs de Shapley.
 
 <br>
 
@@ -454,14 +454,16 @@ Une seconde méthode consiste à passer par les Shapley Values.
 
 <br>
 
-L'analyse locale via les valeurs de Shapley nous a permis de quantifier précisément la contribution de chaque caractéristique à une prédiction spécifique. Pour un grain de haricot particulier, nous observons que:
+Cette analyse nous a permis de quantifier précisément la contribution de chaque caractéristique à une prédiction spécifique. Pour le même grain de haricot, nous observons que:
 
 * L'excentricité exerce l'influence la plus forte avec une valeur de -0.19, poussant la prédiction vers la classe DERMASON
 * La longueur de l'axe majeur contribue également de manière significative (-0.17) à identifier le grain comme DERMASON
 * La rondeur a une influence modérée (-0.09), renforçant la classification DERMASON
 * La longueur de l'axe mineur, l'étendue et la solidité ont des contributions mineures mais toujours dans la même direction
 
-Ces élements confirme que les trois caractéristiques principales identifiées dans l'analyse globale (excentricité, longueur de l'axe majeur et rondeur) déterminent également les décisions au niveau individuel.
+Ces élements confirme au niveau local, pour cet individu, que les trois caractéristiques principales identifiées dans l'analyse globale (excentricité, longueur de l'axe majeur et rondeur) sont déterminantes.
+
+<br>
 
 Nous allons également regarder la distribution des valeurs Shap pour toute notre jeu de données.
 
