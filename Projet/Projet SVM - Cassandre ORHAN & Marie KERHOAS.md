@@ -336,7 +336,7 @@ En étudiant l'interprétabilité globale de notre modèle, nous cherchons à co
 
 Via ce graphique, nous comprenons que l'excentricité et la longueur de l'axe majeur, avec des scores d'importances respectifs d'environ 0.08 et 0.07, sont les principaux facteurs influençant notre modèle tandis que les autres variables ont une plus faible importance.
 
-Cette hiérachie est confirmé par la mesure d'interaction de Friedman, qui quantifie l'effet des variables sur la performance du modèle. En effet, les forte intéractions entre la longueur de l'axe majeur et l'excentricité suggèrent que ces deux caractéristiques fonctionnent ensemble pour distinguer efficicacement les variétés Dermason et Horoz.
+Par ailleurs, nous nous intéressons également aux intéractions potentielles pouvant exister entre les varibales explicatives.
 
 <div align="center">
   <img 
@@ -347,7 +347,9 @@ Cette hiérachie est confirmé par la mesure d'interaction de Friedman, qui quan
   <br><br>
 </div>
 
-Ensuite, les graphiques de dépendance partielle illustrent les relations fonctionnelles entre chaque caractéristique et la prédiction: une relation négative pour la rondeur et la solidité (les valeurs plus élevées favorisent la classification DERMASON), et une relation positive pour l'excentricité et la longueur de l'axe majeur (les valeurs plus élevées indiquent HOROZ).
+Nous apprenons grâce à ce graphique qu'il existe des effets joints significatifs entre l'excentricité et la longueur de l'axe majeur. Cela signifie que ces deux caractéristiques fonctionnent ensemble pour distinguer efficacement les variétés Dermason et Horoz.
+
+A présent, nous allons étudier les les graphiques de dépendance partielle de chacune des variables. Ils illustrent les relations fonctionnelles entre chaque caractéristique et la prédiction.
 
 <div align="center">
   <img 
@@ -358,7 +360,8 @@ Ensuite, les graphiques de dépendance partielle illustrent les relations foncti
   <br><br>
 </div>
 
-Dans les unités d'origine, cela signifie que par exemple un axe majeur supérieur à 325 unités augmente drastiquement la probabilité de classification HOROZ.
+On constate qu'il existe une relation négative pour la rondeur et la solidité (les valeurs plus élevées favorisent la prédiction de la variété DERMASON), et une relation positive pour l'excentricité et la longueur de l'axe majeur (les valeurs plus élevées indiquent la prédiction d'une variété HOROZ).
+Si ces graphiques ont été réalisés à partir des valeurs standardisées des caractéristiques, nous pouvons également les reproduire, mais en reprenant cette fois-ci les valeurs d'origine afin de facilité leur interprétation.
 
 <div align="center">
   <img 
@@ -368,6 +371,8 @@ Dans les unités d'origine, cela signifie que par exemple un axe majeur supérie
   <i>Courbes de dépendance partielle (PDP) pour les variables non standardisé </i>
   <br><br>
 </div>
+
+Dans les unités d'origine, cela signifie que par exemple un axe majeur supérieur à 325 pixels augmente drastiquement la probabilité de classification HOROZ.
 
 Enfin, dans le graphique de distribution de l'importance des variables, la largeur des boites indique la variabilité de l'influence de chaque caractéristique. Ainsi l'excentricité bien que dominante, présente une distribution plus étendue, indiquant que son effet peut fluctuer selon le contexte ou ses interactions avec les autres variables. Au contraire, les distributions plus étroites de l'étendue et de la solidité indiquent des influences plus constante, bien que mineure.
 
