@@ -14,7 +14,7 @@ Mai 2025<br><br><hr>
 
 ## Introduction
 
-Le sujet de notre étude concerne les haricots secs. Nous disposons d'une base de données répertoriant 13 611 grains de 7 variétés différentes de haricots secs. De plus, nous avons pour chaque grain des indications sur ses dimensions et sa forme grâce à 16 variables renseignées. Aussi, nous chercherons à mettre en place un modèle de machine learning nous permettant de classer de façon pertinente ces grains dans la variété auquelle ils appartiennent, en nous basant sur leurs caractéristiques observées. Il est à noter que nous avons choisi de nous concentrer sur uniquement deux des variétés de haricots secs afin de réaliser cette étude.
+Le sujet de notre étude concerne les haricots secs. Nous disposons d'une base de données répertoriant 13 611 grains de 7 variétés différentes de haricots secs. De plus, nous avons pour chaque grain des indications sur ses dimensions et sa forme grâce à 16 variables renseignées. Aussi, nous chercherons à mettre en place un modèle de machine learning nous permettant de classer de façon pertinente ces grains dans la variété auquelle ils appartiennent, en nous basant sur leurs caractéristiques observées. Par la suite nous chercherons à l'interpréter de façon globale puis locale. Il est à noter que nous avons choisi de nous concentrer sur uniquement deux des variétés de haricots secs afin de réaliser cette étude.
 
 ## Analyse exploratoire
 
