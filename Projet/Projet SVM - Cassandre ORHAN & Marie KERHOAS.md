@@ -169,6 +169,7 @@ Le test a révélé que seules les variables Solidity et Roundness présentaient
 
 Par la suite, nous avons choisi de rééquilibrer nos données en utilisant un resample. Cela nous a permis d'effectuer une sélection parmi les grains de la variété Dermason afin d'en conserver autant que ceux disponibles pour la variété Horoz. Ainsi la différence entre les proportion des espèces initiallement présentes ne sera pas un facteur pouvant affecter les prédictions que nous réaliserons.
 
+Nous avons étudié les outliers après l’équilibrage, et la variable Roundness, qui en comptait initialement 5, n’en présente plus que 3.
 
 <br>
 
@@ -178,7 +179,7 @@ La seconde phase de notre étude a consité à mettre en place des modèles afin
 
 ### Séparation du jeu de données et standardisation
 
-Pour cela, nous avons du séparer notre jeu de données : en premier lieu en les X (variables explicatives) et le y (variable d'intérêt recodée en 0 pour Dermason et 1 pour Horoz), mais également entre le jeu d'entraînement (80%) et le jeu de test (20%). Une fois cette séparation effectuée, nous avons standardiser nos X_train et X_test afin de mettre sur une même échelle nos différentes variables explicatives et ce de façon indépendente entre les jeux train et test.
+Pour cela, nous avons du séparer notre jeu de données : en premier lieu en les X (variables explicatives) et le y (variable d'intérêt recodée en 0 pour Dermason et 1 pour Horoz), mais également entre le jeu d'entraînement (80%) et le jeu de test (20%). Une fois cette séparation effectuée, nous avons standardisé nos X_train et X_test afin de mettre sur une même échelle nos différentes variables explicatives et ce de façon indépendente entre les jeux train et test.
 
 ### Les modèles et les métriques
 
@@ -320,6 +321,9 @@ Au vu des résultats obtenus, si nous ne devons retenir qu'un modèle se sera ce
 
 ### Interprétatabilité globale
 
+Nous allons pouvoir passez à l'interprétation globale de notre modèle avant de réaliser l'interprétation locale.
+
+Nous d'abord, notre graphiques présentant l'importance des variétés démontre clairement que l'excentricité et la longueur de l'axe majeur sont les facteurs déterminants, avec des scores d'importances respectifs d'environ 0.08 et 0.07, tandis que les autres variables ne semblent pas influencer majoritairement la classification.
 
 <div align="center">
   <img 
@@ -330,32 +334,7 @@ Au vu des résultats obtenus, si nous ne devons retenir qu'un modèle se sera ce
   <br><br>
 </div>
 
-<div align="center">
-  <img 
-  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/10.png"
-  width="600" />
-  <br>
-  <i>Graphiques de dépendance partielle pour chaque caractéristique </i>
-  <br><br>
-</div>
-
-<div align="center">
-  <img 
-  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/11.png"
-  width="600" />
-  <br>
-  <i>Courbes de dépendance partielle (PDP) pour les caractéristiques morphologiques </i>
-  <br><br>
-</div>
-
-<div align="center">
-  <img 
-  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/12.png"
-  width="600" />
-  <br>
-  <i>Légende </i>
-  <br><br>
-</div>
+Cette hiérachie est confirmé par la mesure d'interaction de Friedman, qui quantifie l'effet des variables sur la performance du modèle. En effet, les forte intéractions entre la longueur de l'axe majeur et l'excentricité suggèrent que ces deux caractéristiques fonctionnent ensemble pour distinguer efficicacement les variétés Dermason et Horoz.
 
 <div align="center">
   <img 
@@ -365,6 +344,41 @@ Au vu des résultats obtenus, si nous ne devons retenir qu'un modèle se sera ce
   <i>Mesure d'interaction de Friedman pour les caractéristiques du modèle </i>
   <br><br>
 </div>
+
+Ensuite, les graphiques de dépendance partielle illustrent les relations fonctionnelles entre chaque caractéristique et la prédiction: une relation négative pour la rondeur et la solidité (les valeurs plus élevées favorisent la classification DERMASON), et une relation positive pour l'excentricité et la longueur de l'axe majeur (les valeurs plus élevées indiquent HOROZ).
+
+<div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/10.png"
+  width="600" />
+  <br>
+  <i>Graphiques de dépendance partielle pour chaque caractéristique standardisé </i>
+  <br><br>
+</div>
+
+Dans les unités d'origine, cela signifie que par exemple un axe majeur supérieur à 325 unités augmente drastiquement la probabilité de classification HOROZ.
+
+<div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/11.png"
+  width="600" />
+  <br>
+  <i>Courbes de dépendance partielle (PDP) pour les variables non standardisé </i>
+  <br><br>
+</div>
+
+Enfin, dans le graphique de distribution de l'importance des variables, la largeur des boites indique la variabilité de l'influence de chaque caractéristique. Ainsi l'excentricité bien que dominante, présente une distribution plus étendue, indiquant que son effet peut fluctuer selon le contexte ou ses interactions avec les autres variables. Au contraire, les distributions plus étroites de l'étendue et de la solidité indiquent des influences plus constante, bien que mineure.
+
+<div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/12.png"
+  width="600" />
+  <br>
+  <i>Distribution de l'importance des variables </i>
+  <br><br>
+</div>
+
+Maintenant que nous comprenons comment fonctionne notre modèle à l'échelle globale, examinons son comportement au niveau individuel avec l'interprétation locale, qui nous révélera pourquoi chaque haricot est classé dans une catégorie spécifique.
 
 ### Interprétatabilité individuelle
 
