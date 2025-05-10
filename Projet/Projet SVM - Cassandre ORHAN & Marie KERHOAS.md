@@ -20,7 +20,7 @@ Le sujet de notre étude concerne les haricots secs. Nous disposons d'une base d
 
 ### Présentation des variables
 
-Comme nous l'avons évoqué précédemment, nous disposons de 17 variables : celle indiquant la variété du grain ainsi que 16 autres le décrivant. L'ensemble de ces variables explicatives sont quantitatives et nous allons les présenter. Elles ont été obtenues grâce à des photos prises de tous les grains, par un appareil photo à haute résolution,  qui ont ensuite permis d'extraire les caractéristiques de ces grains par ordinateur.
+Comme nous l'avons évoqué précédemment, nous disposons de 17 variables : celles indiquant la variété du grain ainsi que 16 autres le décrivant. L'ensemble de ces variables explicatives sont quantitatives et nous allons les présenter. Elles ont été obtenues grâce à des photos prises de tous les grains, par un appareil photo à haute résolution,  qui ont ensuite permis d'extraire les caractéristiques de ces grains par ordinateur.
 
 
 - __Area (A):__ La surface d'une zone de haricots et le nombre de pixels à l'intérieur de ses limites.
@@ -41,11 +41,11 @@ Comme nous l'avons évoqué précédemment, nous disposons de 17 variables : cel
 - __ShapeFactor4 (SF4)__
 - __Class__ (Seker, Barbunya, Bombay, Cali, Dermosan, Horoz and Sira)
 
-Comme on peut le voir, nous ne disposons pas d'informations déscriptives suffisantes sur les 4 ShapeFactors, aussi nous avons choisi de ne pas les prendre en compte.
+Comme on peut le voir, nous ne disposons pas d'informations descriptives suffisantes sur les 4 ShapeFactors, aussi nous avons choisi de ne pas les prendre en compte.
 
 ### Choix des variétés retenues
 
-Etant donné notre choix de nous focaliser sur deux des catégories proposées, nous avons dans un premier temps du les sélectionner. Pour cela, nous avons commencer par observer la répartition des grains entre les classes.
+Etant donné notre choix de nous focaliser sur deux des catégories proposées, nous avons dans un premier temps dû les sélectionner. Pour cela, nous avons commencé par observer la répartition des grains entre les classes.
 
 <br>
 
@@ -144,8 +144,8 @@ Dans notre cas, nous avons constaté que des coefficients très importants étai
 
 ### Les outliers
 
-Nous avons par la suite chercher à étudier les possibles valeur atypique et avons pour cela appliqué un test ESD qui permet de détecter automatiquement un ou plusieurs outliers dans une distribution supposée normale en comparant l'écart d'une observation au reste de l'échantillon. 
-Le test a révélé que seules les variables Solidity et Roundness présentaient respectivement 100 et 5 valeurs atypiques. Nous avons décidé de ne pas les corriger, car ces variables conservent un pouvoir discriminant (comme le montre la graphique ci-dessous) entre les classes Dermason et Horoz, sans être structurellement perturbées par la présence de quelques valeurs extrêmes.
+Nous avons par la suite cherché à étudier les possibles valeurs atypiques et avons pour cela appliqué un test ESD qui permet de détecter automatiquement un ou plusieurs outliers dans une distribution supposée normale en comparant l'écart d'une observation au reste de l'échantillon. 
+Le test a révélé que seules les variables Solidity et Roundness présentaient respectivement 100 et 5 valeurs atypiques. Nous avons décidé de ne pas les corriger, car ces variables conservent un pouvoir discriminant (comme le montre le graphique ci-dessous) entre les classes Dermason et Horoz, sans être structurellement perturbées par la présence de quelques valeurs extrêmes.
 <!--
 ![image sur Github](https://github.com/user-attachments/assets/ae43b5f4-f8b0-498b-ab57-7764eb0f5c91)
 -->
@@ -179,11 +179,11 @@ La seconde phase de notre étude a consité à mettre en place des modèles afin
 
 ### Séparation du jeu de données et standardisation
 
-Pour cela, nous avons du séparer notre jeu de données : en premier lieu en les X (variables explicatives) et le y (variable d'intérêt recodée en 0 pour Dermason et 1 pour Horoz), mais également entre le jeu d'entraînement (80%) et le jeu de test (20%). Une fois cette séparation effectuée, nous avons standardisé nos X_train et X_test afin de mettre sur une même échelle nos différentes variables explicatives et ce de façon indépendente entre les jeux train et test.
+Pour cela, nous avons du séparer notre jeu de données : en premier lieu entre les X (variables explicatives) et le y (variable d'intérêt recodée en 0 pour Dermason et 1 pour Horoz), mais également entre le jeu d'entraînement (80%) et le jeu de test (20%). Une fois cette séparation effectuée, nous avons standardisé nos X_train et X_test afin de mettre sur une même échelle nos différentes variables explicatives et ce de façon indépendante entre les jeux train et test.
 
 ### Les modèles et les métriques
 
-Nous avons choisi d'appliquer 7 modèles en conservant dans un premier temps les paramètres d'origine proposés. Après avoir entrainé nos modèles sur le jeu test, nous l'avons tester avec notre jeu test. Cela nous a donné les résultats suivants :
+Nous avons choisi d'appliquer 7 modèles en conservant dans un premier temps les paramètres d'origine proposés. Après avoir entrainé nos modèles sur le jeu test, nous l'avons testé avec notre jeu test. Cela nous a donné les résultats suivants :
 
 <div align="center">
 
@@ -201,7 +201,7 @@ Nous avons choisi d'appliquer 7 modèles en conservant dans un premier temps les
 <br>
 </div>
 
-La matrice de confusion des différents modèles nous permet de nous rendre compte des grains correctement associés à leur variété ainsi que des grains dont la prédiction a été d'une variété à laquelle ils n'appartiennent pas. Grâce à ces matrices, nous obtenons 2 métriques permettant d'évaluer la pertinence de nos modèle : l'accuracy et le F1 score.
+La matrice de confusion des différents modèles nous permet de nous rendre compte des grains correctement associés à leur variété ainsi que des grains dont la prédiction a été d'une variété à laquelle ils n'appartiennent pas. Grâce à ces matrices, nous obtenons 2 métriques permettant d'évaluer la pertinence de nos modèles : l'accuracy et le F1 score.
 
 On constate que l'ensemble des modèles apportent des prédictions proches de la réalité dans la classification des grains de haricots secs avec des accuracy et F1 score de 0,99 pour chacun des modèles testés. En observant plus précisément les matrices de confusion, on se rend compte qu'il y a davantage de grains dont la prédiction est d'appartenir à la variété Dermason alors qu'ils viennent de la variété Horoz que l'inverse. 
 
@@ -323,7 +323,7 @@ La dernière phase de cette étude concerne l'interprétabilité du modèle choi
 
 ### Interprétatabilité globale
 
-En étudiant l'interprétabilité globale de notre modèle, nous cherchons à comprendre l'impact des variables sur les prédictions qu'il fournit. Aussi, nous commencons par nous intéresser à l'importance des différentes variables explicatives.
+En étudiant l'interprétabilité globale de notre modèle, nous cherchons à comprendre l'impact des variables sur les prédictions qu'il fournit. Aussi, nous commençons par nous intéresser à l'importance des différentes variables explicatives.
 
 <br>
 <div align="center">
@@ -347,7 +347,7 @@ Via ce graphique, nous comprenons que l'excentricité et la longueur de l'axe ma
   <br><br>
 </div>
 
-On constate ici que l'excentricité bien que dominante, présente une distribution plus étendue, indiquant que son effet peut fluctuer. Au contraire, les distributions plus étroites de l'étendue et de la solidité indiquent des influences plus constante, bien que mineure.
+On constate ici que l'excentricité bien que dominante, présente une distribution plus étendue, indiquant que son effet peut fluctuer. Au contraire, les distributions plus étroites de l'étendue et de la solidité indiquent des influences plus constantes, bien que mineures.
 
 <br>
 
@@ -373,7 +373,7 @@ A présent, nous allons étudier les graphiques de dépendance partielle de chac
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/10.png"
   width="600" />
   <br>
-  <i>Graphiques de dépendance partielle pour chaque caractéristique standardisé </i>
+  <i>Graphiques de dépendance partielle pour chaque caractéristique standardisée </i>
   <br><br>
 </div>
 
@@ -392,7 +392,7 @@ Si ces graphiques ont été réalisés à partir des valeurs standardisées des 
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/11.png"
   width="600" />
   <br>
-  <i>Courbes de dépendance partielle (PDP) pour les variables non standardisé </i>
+  <i>Courbes de dépendance partielle (PDP) pour les variables non standardisées </i>
   <br><br>
 </div>
 
