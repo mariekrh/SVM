@@ -149,6 +149,19 @@ Le test a révélé que seules les variables Solidity et Roundness présentaient
 
 ![image sur Github](https://github.com/user-attachments/assets/ae43b5f4-f8b0-498b-ab57-7764eb0f5c91)
 
+<br>
+
+<div align="center">
+  <img 
+  src="https://github.com/user-attachments/assets/ae43b5f4-f8b0-498b-ab57-7764eb0f5c91"
+  width="600" />
+  <br>
+  <i>Légende </i>
+  <br><br>
+</div>
+
+<br>
+
 
 ### Le resample
 
