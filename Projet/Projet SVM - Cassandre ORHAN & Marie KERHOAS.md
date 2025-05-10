@@ -421,11 +421,20 @@ Au niveau individuel, il est également possible de réaliser les Partial Depend
 
 On observe que la majorité des courbes ont une allure proche pour chacune des variables explicatives. Cela témoigne de la pertinence des Partial Dependance Plots réalisés au niveau global.
 
-Pour en revenir à l'interprétabilité au niveau local, nous allons choisir un haricots au hasard dans notre jeu test et chercher à comprendre la prédiction qui lui a été attribuée.
+Pour en revenir à l'interprétabilité au niveau local, nous allons choisir un haricot au hasard dans notre jeu test et chercher à comprendre la prédiction qui lui a été attribuée. La première méthode que nous emploirons dans cette optique est l'algorythme Local surogate (Lime).
+
+<div align="center">
+  <img 
+  src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/17.png"
+  width="600" />
+  <br>
+  <i>Dépendances partielles individuelles et moyennes pour chaque caractéristique </i>
+  <br><br>
+</div>
+
+<br>
 
 
-
-LIME
 
 Pour cela, nous allons commencer par analyser les valeurs de shapley 
 
