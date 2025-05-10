@@ -319,12 +319,12 @@ Au vu des résultats obtenus, si nous ne devons retenir qu'un modèle se sera ce
 
 ## Interprétabilité du meilleur modèle
 
+La dernière phase de cette étude concerne l'interpprétabilité du modèle choisi. Nous la réaliserons à un niveau global puis local.
+
 ### Interprétatabilité globale
 
-Nous allons pouvoir passez à l'interprétation globale de notre modèle avant de réaliser l'interprétation locale.
-
-Nous d'abord, notre graphiques présentant l'importance des variétés démontre clairement que l'excentricité et la longueur de l'axe majeur sont les facteurs déterminants, avec des scores d'importances respectifs d'environ 0.08 et 0.07, tandis que les autres variables ne semblent pas influencer majoritairement la classification.
-
+En étudiant l'interprétabilité globale de notre modèle, nous cherchons à comprendre l'impact des variables sur les prédictions qu'il fournit. Aussi, nous commencons par nous intéresser à l'importance des différentes variables explicatives.
+<br>
 <div align="center">
   <img 
   src="https://github.com/mariekrh/SVM/blob/main/Projet/Images/9.png"
@@ -333,6 +333,8 @@ Nous d'abord, notre graphiques présentant l'importance des variétés démontre
   <i>Importance des caractéristiques pour la classification des haricots </i>
   <br><br>
 </div>
+
+Via ce graphique, nous comprenons que l'excentricité et la longueur de l'axe majeur, avec des scores d'importances respectifs d'environ 0.08 et 0.07, sont les principaux facteurs influençant notre modèle tandis que les autres variables ont une plus faible importance.
 
 Cette hiérachie est confirmé par la mesure d'interaction de Friedman, qui quantifie l'effet des variables sur la performance du modèle. En effet, les forte intéractions entre la longueur de l'axe majeur et l'excentricité suggèrent que ces deux caractéristiques fonctionnent ensemble pour distinguer efficicacement les variétés Dermason et Horoz.
 
