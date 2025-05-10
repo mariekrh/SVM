@@ -363,8 +363,15 @@ A présent, nous allons étudier les graphiques de dépendance partielle de chac
   <br><br>
 </div>
 
+<br>
+
 On constate qu'il existe une relation négative pour la rondeur et la solidité (les valeurs plus élevées favorisent la prédiction de la variété DERMASON), et une relation positive pour l'excentricité, la longueur de l'axe majeur ainsi que celle de l'axe mineur (les valeurs plus élevées indiquent la prédiction d'une variété HOROZ).
+
+<br>
+
 Si ces graphiques ont été réalisés à partir des valeurs standardisées des caractéristiques, nous pouvons également les reproduire, mais en reprenant cette fois-ci les valeurs d'origine afin de facilité leur interprétation.
+
+<br>
 
 <div align="center">
   <img 
@@ -374,6 +381,8 @@ Si ces graphiques ont été réalisés à partir des valeurs standardisées des 
   <i>Courbes de dépendance partielle (PDP) pour les variables non standardisé </i>
   <br><br>
 </div>
+
+<br>
 
 Dans les unités d'origine, cela signifie que par exemple un axe majeur supérieur à 325 pixels augmente drastiquement la probabilité de classification HOROZ.
 
