@@ -363,7 +363,7 @@ A présent, nous allons étudier les graphiques de dépendance partielle de chac
   <br><br>
 </div>
 
-On constate qu'il existe une relation négative pour la rondeur et la solidité (les valeurs plus élevées favorisent la prédiction de la variété DERMASON), et une relation positive pour l'excentricité et la longueur de l'axe majeur (les valeurs plus élevées indiquent la prédiction d'une variété HOROZ).
+On constate qu'il existe une relation négative pour la rondeur et la solidité (les valeurs plus élevées favorisent la prédiction de la variété DERMASON), et une relation positive pour l'excentricité, la longueur de l'axe majeur ainsi que celle de l'axe mineur (les valeurs plus élevées indiquent la prédiction d'une variété HOROZ).
 Si ces graphiques ont été réalisés à partir des valeurs standardisées des caractéristiques, nous pouvons également les reproduire, mais en reprenant cette fois-ci les valeurs d'origine afin de facilité leur interprétation.
 
 <div align="center">
