@@ -241,7 +241,6 @@ Afin d'évaluer la qualité des modèles précédemment élaborés, nous avons �
 
 Comme nous pouvions nous y attendre, les accuracy moyennes sont proches au sein des différents modèles. Toutefois celui ayant la plus forte est le SVM rbf avec une accuracy moyenne de 0.9929. C'est donc ce modèle qui semble être le plus pertinent.
 
-<br>
 
 ### Optimisation des modèles
 
@@ -296,7 +295,6 @@ Cette fois-ci également, nous avons effectué une cross validation avec 5 folds
 
 Avec une accuracy moyenne de 0.9922, le modèle Random Forest est celui le plus pertinent parmi les 5.
 
-<br>
 
 ### Le meilleur modèle
 
